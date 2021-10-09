@@ -3,34 +3,43 @@ SevSeg sevSeg;
 unsigned int myTemp;
 
 void setup() {
-  // put your setup code here, to run once:
   Serial.begin(9600);
+  Serial.println("==================");
+  Serial.println("Welcome to Nhom 3");
+  Serial.println("==================");
   byte numDigits = 4;
   byte ccDPins[] = {A0, A1, A2, A3};
   byte segDPins[] = {2,3,4,5,6,7,8,9};
 
+  //(hardwareConfig,numDigitsIn,digitPinsIn[], segmentPinsIn[],
+  //resOnSegmentsIn,updateWithDelaysIn,leadingZerosIn, disableDecPoint)
   sevSeg.begin(COMMON_ANODE, numDigits, ccDPins, segDPins, false, false, false, false);
-  sevSeg.setBrightness(100);
-  analogReference(INTERNAL);
+  // Thiết lập độ sáng
+  sevSeg.setBrightness(100); 
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  // Lấy thời gian kể từ khi arduino được khởi động
   unsigned long prMillis = millis();
   while( millis() - prMillis < 2000)
   {
+    // làm mới màn hình
     sevSeg.refreshDisplay();
   }
   myTemp = acqTemp();
-  sevSeg.setNumber(myTemp, 2, LOW);
+  // Thiết lập số hiển thị và lấy 2 số thập phân
+  sevSeg.setNumber(myTemp, 2, LOW); 
 }
 
 unsigned int acqTemp()
 {
-  float temp = (float) 100*(1.1/1023)*analogRead(A4);
-  Serial.println("Room temperature is - ");
+  float temp = (float) 100*(5.0/1024)*analogRead(A4);
+  
+  Serial.print("Nhiet do trong phong la: ");
+  // In temp (nhiệt độ) lên màn hình và lấy 2 số thập phân
   Serial.print(temp, 2);
-  Serial.println(" deg C");
+  Serial.print(char(223));
+  Serial.println("C");
   temp = 100*temp;
   return ((unsigned int)temp);
 }
