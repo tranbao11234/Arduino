@@ -1,0 +1,10 @@
+C:\Users\Huy\source\repos\Thunghiem1\Thunghiem1\bin\Thunghiem1.exe.config
+C:\Users\Huy\source\repos\Thunghiem1\Thunghiem1\bin\Thunghiem1.exe
+C:\Users\Huy\source\repos\Thunghiem1\Thunghiem1\bin\Thunghiem1.pdb
+C:\Users\Huy\source\repos\Thunghiem1\Thunghiem1\obj\Release\Thunghiem1.csprojAssemblyReference.cache
+C:\Users\Huy\source\repos\Thunghiem1\Thunghiem1\obj\Release\Thunghiem1.Form1.resources
+C:\Users\Huy\source\repos\Thunghiem1\Thunghiem1\obj\Release\Thunghiem1.Properties.Resources.resources
+C:\Users\Huy\source\repos\Thunghiem1\Thunghiem1\obj\Release\Thunghiem1.csproj.GenerateResource.cache
+C:\Users\Huy\source\repos\Thunghiem1\Thunghiem1\obj\Release\Thunghiem1.csproj.CoreCompileInputs.cache
+C:\Users\Huy\source\repos\Thunghiem1\Thunghiem1\obj\Release\Thunghiem1.exe
+C:\Users\Huy\source\repos\Thunghiem1\Thunghiem1\obj\Release\Thunghiem1.pdb
